@@ -26,13 +26,13 @@ void search(const char* pattern, const char* data, int q, int d) {
         if (pat_hash == data_hash) {
             if (memcmp(&data[i], &pattern[0], pat_len) == 0) {
                 printf("Pattern found at index %d \n", i);
-                
+
             }
         }
 
-        data_hash = (d * (data_hash - data[i] * h) + data[i + pat_len]) % q;
+        data_hash = (d*(data_hash - data[i]*h) + data[i + pat_len]) % q;
         if (data_hash < 0) {
-            data_hash = (data_hash + q);
+            data_hash += q;
         }
     }
 }
