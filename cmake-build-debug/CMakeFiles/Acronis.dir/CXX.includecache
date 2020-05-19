@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/arv1k/CLionProjects/Acronis/buffer.h
+
 /home/arv1k/CLionProjects/Acronis/main.cpp
 cstdio
 -
 cstring
 -
+buffer.h
+/home/arv1k/CLionProjects/Acronis/buffer.h
 
